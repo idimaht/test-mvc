@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<<%- include('partials/head') %> >
+
+    <body>
+        <div>Name of giver</div>
+        <input type="text" name="name" id="">
+
+        <div>Number of Like</div>
+        <input type="number" name="like" id="">
+
+        <div> Number of share </div>
+        <input type="number" name="share" id="">
+
+        <div> Number of comment </div>
+        <input type="number" name="comment" id="">
+
+        <button onclick="addScore()">Click for Result</button>
+
+        <%- include('partials/footer') %>
+
+            <script>
+                async function addScore() {
+                    const name = document.querySelector("#name");
+                    const like = document.querySelector("#like");
+                    const price = document.querySelector("#share");
+                    const author = document.querySelector("#comment");
+
+                    await axios.post("http://localhost:3000/api/score", {
+                        name: name.value,
+                        reach: reach.value,
+                        like: like.value,
+                        share: share.value,
+                        comment: comment.value,
+                    });
+
+                    location.reload();
+                }
+            </script>
+    </body>
+
+</html>
