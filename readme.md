@@ -8,4 +8,4 @@
 - **Views** หน้า User Interface
     - partial folder ส่วนเสริม navbar footer head จะอยู่ในนี้
     - index.ejs เป็นหน้าหลัก หรือแรก เมื่อเข้า http://localhost:3000
-    - add-score.ejs เป็นหน้าเพิ่มคะแนน (ยังทำไม่เสร็จ) TT
+    - add-score.ejs เป็นหน้าเพิ่มคะแนน (ยังทำไม่เสร็จ) 😭
